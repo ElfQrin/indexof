@@ -1,7 +1,7 @@
 <?
 # IndexOf Enhanced
 # By Valerio Capello (Elf Qrin) - http://labs.geody.com/
-# r2019-03-07 fr2018-12-29
+# r2020-03-31 fr2018-12-29
 # License: GPL
 
 # die(); # die unconditionately, locking out any access
@@ -441,7 +441,7 @@ if ($linknoext) {$r=strrpos($cfile,'.'); if ($r!==false && $r>0) {$cfnam=substr(
 }
 if ($fnamelimlen && strlen($cfnam)>$fnamelimlenmx) {$cfnam=substr($cfnam,0,$fnamelimlenmx).$fnamelimlenov;}
 echo '<td class="tabltd1">';
-if ($enlink) {echo '<a href="'.urlencode($cfile).'" '.$linkparams.'>';}
+if ($enlink) {echo '<a href="'.$cfile.'" '.$linkparams.'>';}
 echo '<div class="';
 if ($iscfiledir) {echo 'tdir';} else {echo 'tfil';}
 echo '">';
